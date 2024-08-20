@@ -48,12 +48,13 @@ img {
 }
 
 .card-avatar img {
-  height: 50px;
+  height: 65px;
   width: 50px;
 }
 
 .card-details {
   line-height: 1.5;
+  margin-left: 10px;
 }
 
 .card-details h3 {
