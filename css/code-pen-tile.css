@@ -94,3 +94,9 @@ img {
 .card-stats li:hover {
   cursor: pointer;
 }
+
+.container-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
