@@ -1,0 +1,47 @@
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --bg-main: #bac4e3;
+  --bg-card: #797ea3;
+  --bg-stats: #131417;
+  --username: #b7bbc8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: var(--bg-main);
+  font-family: var(--font-main);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  width: 1.5em;
+  height: 1.5em;
+  background: var(--bg-stats);
+  border-radius: 50%;
+  margin: 0 0.5em;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 var(--bg-stats);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 1em transparent;
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
