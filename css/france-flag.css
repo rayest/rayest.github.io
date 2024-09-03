@@ -1,0 +1,42 @@
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --bg-main: #bac4e3;
+  --bg-card: #797ea3;
+  --bg-stats: #131417;
+  --username: #b7bbc8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: var(--bg-main);
+  font-family: var(--font-main);
+}
+
+.flag {
+  height: 150px;
+  width: calc(150px * 3 / 2);
+  margin: 2em auto;
+  /* display: flex;  或者使用 grid */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+
+}
+
+.stripe {
+  flex-grow: 1;
+}
+
+.red {
+  background: red;
+}
+
+.white {
+  background: white;
+}
+
+.blue {
+  background: blue;
+}

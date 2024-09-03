@@ -1,0 +1,54 @@
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --bg-main: #bac4e3;
+  --bg-card: #797ea3;
+  --bg-stats: #131417;
+  --username: #b7bbc8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: var(--bg-main);
+  font-family: var(--font-main);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.square {
+  width: 1.5em;
+  height: 1.5em;
+  background: var(--bg-stats);
+  margin: 0 0.5em;
+  /* 表示旋转一周需要1秒 */
+  animation: rotate 1s infinite;
+}
+
+.square1 {
+  background-color: red;
+}
+
+.square2 {
+  background-color: blue;
+}
+
+.square3 {
+  background-color: green;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --bg-main: #bac4e3;
+  --bg-card: #797ea3;
+  --bg-stats: #131417;
+  --username: #b7bbc8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: var(--bg-main);
+  font-family: var(--font-main);
+}
+
+.rings,
+.ring {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring {
+  border-radius: 50%;
+}
+
+.ring-1 {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+
+.ring-2 {
+  background-color: blue;
+  height: 150px;
+  width: 150px;
+}
+
+.ring-3 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.target {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+}

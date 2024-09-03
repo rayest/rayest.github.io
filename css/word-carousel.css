@@ -1,0 +1,53 @@
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --bg-main: #bac4e3;
+  --bg-card: #797ea3;
+  --bg-stats: #131417;
+  --username: #b7bbc8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: var(--bg-main);
+  font-family: var(--font-main);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1::after {
+  content: " Andy";
+  animation: wordCarousel 4s infinite;
+  background: violet;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+/* 添加动画。在四个单词间切换 */
+@keyframes wordCarousel {
+  0% {
+    content: "Andy";
+  }
+  25% {
+    content: "Bell";
+  }
+
+  50% {
+    content: "Cindy";
+  }
+
+  75% {
+    content: "Dianna";
+  }
+
+  100% {
+    content: "Eva";
+  }
+}
